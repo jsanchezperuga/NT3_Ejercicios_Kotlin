@@ -39,7 +39,7 @@ class Fragment2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val tv: TextView = view.findViewById(R.id.txt_value_frg2)
-        val amount = args.counter
+        val amount = args.textPassed
         tv.text = amount.toString()
     }
 

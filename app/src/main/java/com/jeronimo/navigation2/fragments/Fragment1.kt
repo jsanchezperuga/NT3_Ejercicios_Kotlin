@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.navigation.findNavController
 import com.jeronimo.navigation2.R
@@ -18,6 +19,7 @@ class Fragment1 : Fragment() {
     lateinit var vista: View
     lateinit var btn1: Button
     lateinit var btn2: Button
+    lateinit var et_Text : EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,9 +41,10 @@ class Fragment1 : Fragment() {
     override fun onStart() {
         super.onStart()
         btn1.setOnClickListener{
-            //val txt_value : TextView = vista.findViewById(R.id.txt_value_frg2)
+            et_Text = vista.findViewById(R.id.et_input)
+            val valueTxt: String = et_Text.text.toString()
             val value: Int = 420
-            val action = Fragment1Directions.actionFragment1ToFragment2(value)
+            val action = Fragment1Directions.actionFragment1ToFragment2(valueTxt)
             vista.findNavController().navigate(action)
         }
         btn2.setOnClickListener{

@@ -31,4 +31,16 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_frag_2"
         app:layout_constraintVertical_bias="0.402" />
 
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Meta texto acá"
+        app:layout_constraintBottom_toTopOf="@+id/btn_frag_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_frag_2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

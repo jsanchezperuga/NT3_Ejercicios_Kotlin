@@ -26,9 +26,8 @@
             android:id="@+id/action_fragment2_to_fragment1"
             app:destination="@id/fragment1" />
         <argument
-            android:name="counter"
-            app:argType="integer"
-            android:defaultValue="0" />
+            android:name="textPassed"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/fragment3"
